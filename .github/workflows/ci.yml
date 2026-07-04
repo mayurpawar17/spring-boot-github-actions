@@ -35,9 +35,9 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
         mvn sonar:sonar \
-          -Dsonar.token=$SONAR_TOKEN
-          -Dsonar.organization=mayurpawar17
-          -Dsonar.projectKey=mayurpawar17_spring-boot-github-actions
+          -Dsonar.token=$SONAR_TOKEN \
+          -Dsonar.organization=mayurpawar17 \
+          -Dsonar.projectKey=mayurpawar17_spring-boot-github-actions \
           -Dsonar.host.url=https://sonarcloud.io
         
 
